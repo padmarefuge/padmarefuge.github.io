@@ -144,7 +144,8 @@ h1, h2, h3 { margin: 0; font-family: var(--font-display); color: var(--ink); fon
 .hero__text .h-display span { color: var(--gold-soft); }
 .hero__text .lede { color: var(--dark-mute); max-width: 520px; }
 .hero__media { flex: 1 1 420px; min-height: 420px; background: var(--dark-3); position: relative; display: flex; align-items: center; justify-content: center; }
-.hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__media img:not(.hero__logo) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero__logo { width: min(62%, 300px); height: auto; padding-block: 40px; }
 .placeholder-caption {
   position: absolute; bottom: 20px; left: 0; right: 0; text-align: center;
   font-family: var(--font-ui); font-size: 12px; letter-spacing: 1.6px; text-transform: uppercase; color: var(--dark-mute);
