@@ -113,6 +113,8 @@ h1, h2, h3 { margin: 0; font-family: var(--font-display); color: var(--ink); fon
 }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
 .brand:hover { color: var(--ink); }
+.brand__logo { display: block; height: 88px; width: auto; }
+@media (max-width: 860px) { .brand__logo { height: 68px; } }
 .brand__name {
   font-family: var(--font-display); font-weight: 600; font-size: 18px;
   letter-spacing: 2.5px; text-transform: uppercase;
